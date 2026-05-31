@@ -357,4 +357,4 @@ MIT License — використовуйте, модифікуйте, пошир
 
 ---
 
-*Made with  🎩 in Ukraine, 2026*
+*Made with  🎩 in Ukraine, 2026* 
