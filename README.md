@@ -7,7 +7,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/fintato/six-hats-investment?style=social)](https://github.com/fintato/six-hats-investment/stargazers)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
-Скіл для Claude AI, який реалізує методологію **«Шість капелюхів мислення»** (https://uk.wikipedia.org/wiki/Шість_капелюхів_мислення)   Едварда де Боно для аналізу інвестиційних ідей, адаптовану під український контекст. 
+Скіл для Claude AI, який реалізує методологію **«Шість капелюхів мислення»** (https://uk.wikipedia.org/wiki/Шість_капелюхів_мислення) Едварда де Боно для аналізу інвестиційних ідей, адаптовану під український контекст. 
 
 > *"Чи варто купити X?" — це не одне питання. Це шість різних питань. Цей скіл відповідає на всі шість, послідовно і дисципліновано."*
 
