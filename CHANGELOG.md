@@ -1,0 +1,102 @@
+# Changelog
+
+Усі помітні зміни в проєкті документуються в цьому файлі.
+
+Формат базується на [Keep a Changelog](https://keepachangelog.com/uk/1.1.0/),
+а проєкт дотримується [Semantic Versioning](https://semver.org/lang/uk/).
+
+---
+
+## [Unreleased]
+
+### Заплановано
+- Скриншоти прогонів у `docs/screenshots/`
+- Англійська версія README
+- Версія для аналізу ОВДП
+- Версія для аналізу страхування життя та НПФ
+- Версія для криптовалют (може, але це не точно) 
+
+---
+
+## [1.0.0] — 2026-05-31
+
+### Перший публічний реліз 🎉
+
+#### Додано
+- **Базова методологія "6 капелюхів"** в `SKILL.md` з 7 фазами аналізу
+- **10 правил аналізу:**
+  1. Tax Events Count — підрахунок податкових подій на рік
+  2. UCITS Priority — UCITS Acc як дефолт для довгострокових позицій
+  3. Portfolio Context — аналіз у контексті портфеля, не у вакуумі
+  4. Implementation Paths — SPOT vs Options vs Futures для directional тез
+  5. Адаптивний горизонт — trigger-based exits замість фіксованих термінів
+  6. Hedge Reframing Test — чесне розрізнення хеджу від directional bet
+  7. UCITS Check — обов'язкова перевірка UCITS Acc-альтернатив
+  8. Combo over Pure — розгляд combo-стратегій
+  9. Trigger-based Exits — numerical exit-тригери в кожній рекомендації
+  10. Stagflation Hedge — TIPS-overlay для bond/rate тез
+- **6 типів класифікації тез** у `references/thesis-classifier.md`:
+  Directional bet, Income/yield, Long-term compounder, Hedge, Tactical, Venture
+- **Український податковий блок** у `references/tax-ukraine.md` з:
+  - Розрахунками 18%+5% через курс НБУ
+  - Парадоксом "примарного" гривневого доходу при девальвації
+  - Tax-loss harvesting стратегією
+  - W-8BEN механікою для українців з рахунком в IB
+- **Exit-тригери** у `references/exit-triggers.md` для:
+  Bonds, Single equity, Index ETF, Options, Hedges, Venture
+- **Шаблон портфельного файлу** у `references/portfolio-template.md`
+- **Два референсні приклади** в `examples/`:
+  - 30Y Treasuries thesis (AI bubble + Fed cuts)
+  - Single equity thesis (NVDA додавання до VOO)
+- **Інтеграція з EODHD MCP** для отримання ринкових даних
+- **Активація через явні тригерні фрази** з обов'язковим підтвердженням запуску
+
+#### Документація
+- Детальний README з покроковою інструкцією налаштування
+- CONTRIBUTING.md з гайдлайнами для контриб'юторів
+- MIT License з додатковим disclaimer щодо фінансових рекомендацій
+- .gitignore для захисту персональних даних
+
+#### Особливості релізу
+- Скіл деперсоналізовано — усі приклади з плейсхолдерами
+- Контекст за замовчуванням — Україна, але адаптується під інші юрисдикції через `portfolio.md`
+- Тестовано на Claude Opus 4.8, 4.7 і Sonnet 4.6 з EODHD MCP free-плану
+
+---
+
+## Шаблон для майбутніх записів
+
+```markdown
+## [X.Y.Z] — YYYY-MM-DD
+
+### Додано
+- Нові функції
+
+### Змінено
+- Зміни в існуючому функціоналі
+
+### Виправлено
+- Виправлення багів
+
+### Видалено
+- Прибрана функціональність
+
+### Безпека
+- Зміни, що стосуються безпеки
+
+### Застаріле
+- Функціонал, який буде видалений у наступних версіях
+```
+
+---
+
+## Версіонування
+
+Цей проєкт використовує [Semantic Versioning](https://semver.org/lang/uk/):
+
+- **MAJOR (X.0.0):** Несумісні зміни в методології або форматі скіла
+- **MINOR (0.Y.0):** Нові функції, правила, типи тез — зворотно сумісні
+- **PATCH (0.0.Z):** Виправлення помилок, друкарські, форматування
+
+[Unreleased]: https://github.com/fintato/six-hats-investment/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/fintato/six-hats-investment/releases/tag/v1.0.0
