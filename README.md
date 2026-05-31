@@ -13,6 +13,14 @@
 
 ---
 
+## 📥 Швидкий старт
+
+**Готовий до використання?** [⬇️ Завантажити скіл (ZIP)](https://github.com/fintato/six-hats-investment/releases/latest/download/six-hats-investment-skill-only.zip)
+
+Потім слідуйте інструкції з [Налаштування — крок за кроком](#-налаштування--крок-за-кроком).
+
+---
+
 ## 📋 Зміст
 
 - [Що це і навіщо](#-що-це-і-навіщо)
@@ -131,14 +139,12 @@ EODHD — це провайдер фінансових даних. Скіл ви
 
 ### Крок 4: Завантаження скіла
 
-1. Скачайте репозиторій:
-   - Через Git: `git clone https://github.com/fintato/six-hats-investment.git` 
-   - Або через UI GitHub: натисніть **Code → Download ZIP**
-2. Розпакуйте, переконайтесь що папка зветься `six-hats-investment` і містить `SKILL.md` в корені
-3. Запакуйте папку назад у ZIP (важливо: ZIP має містити одну папку `six-hats-investment/`, а не файли напряму в корені)
-4. У claude.ai → **Settings** → **Capabilities** → **Skills** → **Create skill**
-5. Завантажте ZIP файл
-6. У списку Skills знайдіть `six-hats-investment` і ввімкніть тумблер
+1. Скачайте готовий ZIP: [⬇️ six-hats-investment-skill-only.zip](https://github.com/fintato/six-hats-investment/releases/latest/download/six-hats-investment-skill-only.zip)
+2. У claude.ai → **Settings** → **Capabilities** → **Skills** → **Create skill**
+3. Завантажте скачаний ZIP файл (розпаковувати не потрібно)
+4. У списку Skills знайдіть `six-hats-investment` і ввімкніть тумблер
+
+> 💡 **Для розробників:** альтернативно можна клонувати репозиторій через `git clone https://github.com/fintato/six-hats-investment.git`, але тоді треба самостійно запакувати папку у ZIP перед завантаженням у Claude.
 
 ### Крок 5: (Опціонально) Створення Project і portfolio.md
 
