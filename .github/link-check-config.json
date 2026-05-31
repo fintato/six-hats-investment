@@ -1,18 +1,33 @@
 {
   "ignorePatterns": [
+    { "pattern": "^https://img.shields.io" },
+    { "pattern": "^https://camo.githubusercontent.com" },
+    { "pattern": "^https://claude.ai/referral" },
+    { "pattern": "^https://github.com/<.*>" },
+    { "pattern": "^https://api.github.com" },
+    { "pattern": "localhost" },
+    { "pattern": "127.0.0.1" },
+    { "pattern": "#-" },
+    { "pattern": "#%" }
+  ],
+  "replacementPatterns": [
     {
-      "pattern": "^https://github.com/<your-github-username>"
-    },
-    {
-      "pattern": "^https://github.com/<USERNAME>"
-    },
-    {
-      "pattern": "^https://github.com/<your-username>"
+      "pattern": "^/",
+      "replacement": "{{BASEURL}}/"
     }
   ],
-  "timeout": "20s",
+  "httpHeaders": [
+    {
+      "urls": ["https://github.com", "https://api.github.com"],
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml",
+        "User-Agent": "Mozilla/5.0 (compatible; GitHub-Actions-Link-Check)"
+      }
+    }
+  ],
+  "timeout": "30s",
   "retryOn429": true,
-  "retryCount": 3,
-  "fallbackRetryDelay": "30s",
-  "aliveStatusCodes": [200, 206, 403]
+  "retryCount": 5,
+  "fallbackRetryDelay": "60s",
+  "aliveStatusCodes": [200, 206, 403, 429]
 }
