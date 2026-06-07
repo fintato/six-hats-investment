@@ -86,7 +86,7 @@
 4. **Послідовно проходить капелюхи** з адаптацією до типу тези
 5. **Видає синтез** з конкретною рекомендацією: розмір позиції, інструмент, поетапний вхід, exit-тригери
 
-Приклад повного прогону можна побачити у файлах `examples/example-bond-thesis.md` і `examples/example-equity-thesis.md`.
+Приклади повних прогонів — у папці `examples/`: аналіз облігацій (`example-bond-thesis.md`), акції (`example-equity-thesis.md`) і спекулятивної day-1 IPO-ставки (`example-ipo-thesis.md`).
 
 ---
 
@@ -252,6 +252,19 @@ Claude має:
 7. **Синій фініш**: оцінка X/10, конкретна структура позиції, поетапний вхід, exit-тригери
 
 ---
+## 📖 Приклади аналізів
+
+У папці `examples/` — три повні прогони скіла, кожен на свій тип тези:
+
+| Приклад | Тип тези | Що демонструє |
+|---|---|---|
+| [`example-bond-thesis.md`](examples/example-bond-thesis.md) | Directional + hedge | 30Y treasuries під AI-bubble тезу. Hedge Reframing Test, сценарний UAH-розрахунок, TIPS-overlay, поетапний вхід |
+| [`example-equity-thesis.md`](examples/example-equity-thesis.md) | Long-term compounder | Додавання NVDA до VOO. Concentration risk, подвоєння експозиції, combo-стратегія SMH + NVDA |
+| [`example-ipo-thesis.md`](examples/example-ipo-thesis.md) | Tactical / day-1 | Спекулятивна ставка на IPO. Як скіл виявляє конфлікти у стратегії (stop 10% vs trailing 4%), коригує помилкові часові прив'язки і називає FOMO своїм іменем |
+
+Приклади навмисно деперсоналізовані — числа ілюструють методологію, не є порадою.
+
+---
 
 ## 📂 Структура скіла
 
@@ -265,8 +278,9 @@ six-hats-investment/
 │   ├── exit-triggers.md              # Типові exit-тригери за класами активів
 │   └── ibkr-integration.md           # Робота з Interactive Brokers MCP
 └── examples/                         # Референсні приклади
-    ├── example-bond-thesis.md        # Повний аналіз: 30Y treasuries
-    └── example-equity-thesis.md      # Короткий аналіз: NVDA
+    ├── example-bond-thesis.md        # Повний аналіз: 30Y treasuries (directional + hedge)
+    ├── example-equity-thesis.md      # Аналіз акції: NVDA (long-term compounder)
+    └── example-ipo-thesis.md         # Day-1 IPO ставка (tactical, виявлення конфліктів стратегії)
 ```
 
 ### Ключові правила скіла (всі 11 в SKILL.md)
