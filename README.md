@@ -15,7 +15,7 @@
 
 ## 📥 Швидкий старт
 
-**Готовий до використання?** [⬇️ Завантажити скіл (ZIP)](https://github.com/fintato/six-hats-investment/releases/latest/download/six-hats-investment-skill-only.zip)
+**Готовий до використання?** [⬇️ Завантажити скіл (ZIP)](https://github.com/fintato/six-hats-investment/releases/latest/download/six-hats-investment.zip)
 
 Потім слідуйте інструкції з [Налаштування — крок за кроком](#-налаштування--крок-за-кроком).
 
@@ -142,7 +142,7 @@ EODHD — це провайдер фінансових даних. Скіл ви
 
 ### Крок 4: Завантаження скіла
 
-1. Скачайте готовий ZIP: [⬇️ six-hats-investment-skill-only.zip](https://github.com/fintato/six-hats-investment/releases/latest/download/six-hats-investment-skill-only.zip)
+1. Скачайте готовий ZIP: [⬇️ six-hats-investment.zip](https://github.com/fintato/six-hats-investment/releases/latest/download/six-hats-investment.zip)
 2. У claude.ai → **Settings** → **Capabilities** → **Skills** → **Create skill**
 3. Завантажте скачаний ZIP файл (розпаковувати не потрібно)
 4. У списку Skills знайдіть `six-hats-investment` і ввімкніть тумблер
